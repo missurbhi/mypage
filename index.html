@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #f8f9fa !important;
+    }
+    .navbar-nav .nav-link {
+      font-size: 1rem;
+      margin: 0 0.5rem;
+    }
+    #home {
+      background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+      color: white;
+    }
+    .btn-primary {
+      background-color: #2575fc;
+      border-color: #2575fc;
+    }
+    .card {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background: #343a40;
+      color: #f8f9fa;
+    }
+    #main
+    {
+        height: 400px;
+        width: auto;
+        background-image: url("https://cdn.pixabay.com/photo/2023/02/08/08/50/frequency-wave-7776034_640.jpg");
+        background-size: cover;
+        color: white;
+
+    }
+    h1
+    {
+      font-size: 200;
+      font-weight: 300;
+      font-family:fantasy;
+      margin-top: 80px;
+    }
+    #about
+    {
+        height:400px;
+        width: auto;
+        background-color:lightblue;
+    }
+    #about h2
+    {
+        padding-top: 35px;
+    }
+    #photo
+    {
+        height: 400px;
+        width: auto;
+        /* border: 1px solid black; */
+        background-color: aliceblue;
+    }
+    .one
+    {
+        height: 350px;
+        width: 400px;
+        /* border: 1px solid black; */
+        display: inline-block;
+        margin: 20px;
+    }
+    #onep
+    {
+        background-image: url("iot2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #twop
+    {
+        background-image: url("iot.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }#threep
+    {
+        background-image: url("io3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .card
+    {
+        margin:20px;
+    }
+
+    .containervideo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .video-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .video-card h3 {
+            margin: 0;
+            padding: 10px;
+            font-size: 1.1em;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+       @media (max-width: 768px) {
+            .video-card iframe {
+                height: 250px;
+                width:280px;
+            }
+            #photo #onep,#twop,#threep
+            {
+                height: 200px;
+                width: 280px;
+            }
+            #PPT
+            {
+                margin-top: 400px;
+            }
+            iframe
+            {
+                height: 150px;
+                width: 200px;
+                margin-left: 0px;
+            }
+        }
+        #PPT
+        {
+          background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+        }
+      
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#PPT">PPT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#submission">Submission</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/surbhi-verma989/" target="_blank">LinkedIn</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/missurbhi" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <section id="home" class="text-center p-5">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="lead">Showcasing my work and achievements</p>
+      <a href="#submission" class="btn btn-primary btn-lg">View My Work</a>
+    </div>
+  </section>
+  <section id="main" class="text-center p-5">
+    <h1 >Data Science isn't about quantity of <br>data rather the quality</h1>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" >
+    <div class="container text-center">
+      <h2>About Me</h2>
+      <p class="mt-4">
+        <h3><strong>Course:</strong> MTech (5 Years Integrated) </h3><br>
+        <h3><strong>Enrollment Number:</strong> DE2202197 </h3><br>
+        <h3><strong>Roll Number:</strong> IT-2k22-59 </h3><br>
+        <!-- <h3<strong>Email:</strong> surbhiver073@gmail.com </h3><br> -->
+        <h3><strong>College / University:</strong> IIPS DAVV</h3>
+        <h3><strong>Email :</strong>surbhiver073@gmail.com</h3>
+
+      </p>
+    </div>
+  </section>
+  <!-- photo section -->
+  <section id="photo">
+    <div class="one" id="onep"></div>
+    <div class="one" id="twop"></div>
+    <div class="one" id="threep"></div>
+  </section>
+   
+  <!-- PPT Section -->
+  <section id="PPT" class="p-5 bg-light">
+    <div class="containerppt">
+      <h2 class="text-center" style="color: white;">My Presentations</h2>
+      <div class="row mt-4">
+        <!-- PPT 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Presentation 1: Regression </h5>
+              <p class="card-text">An introduction to Regression concepts for beginners.</p>
+              <a href="https://docs.google.com/presentation/d/1M9NmF0b64Z2v_izo2MJzZTCEfndJql3o/edit?usp=sharing&ouid=100803586706240220755&rtpof=true&sd=true" target="_blank" class="btn btn-primary">View PPT</a>
+            </div>
+          </div>
+        </div>
+        <!-- PPT 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Presentation 2: Neural Network</h5>
+              <p class="card-text"> Applications of Neural Network</p>
+              <a href="https://docs.google.com/presentation/d/1j3EOY4MeaNrLiIyZQsuE2xr17hHVqyoV/edit?usp=sharing&ouid=100803586706240220755&rtpof=true&sd=true" target="_blank" class="btn btn-primary">View PPT</a>
+            </div>
+          </div>
+        </div>
+        <!-- PPT 2 -->
+       
+          <!-- PPT 2 -->
+        <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Presentation 3: Logistic Regression</h5>
+                <p class="card-text">Exploring Logistic Regression </p>
+                <a href="https://docs.google.com/presentation/d/10lj5D179k0dJyQ7JnqPkp8hpUzlWX3K3/edit?usp=sharing&ouid=100803586706240220755&rtpof=true&sd=true" target="_blank" class="btn btn-primary">View PPT</a>
+              </div>
+            </div>
+          </div>
+          <!-- PPT 2 -->
+        <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Presentation 4: Association Rule</h5>
+                <p class="card-text">Understanding Association Rule</p>
+                <a href="https://docs.google.com/presentation/d/1nx8Lw98GmLmmA0-wlWfWebGbAtIo2gwa/edit?usp=sharing&ouid=100803586706240220755&rtpof=true&sd=true" target="_blank" class="btn btn-primary">View PPT</a>
+              </div>
+            </div>
+          </div>
+
+        <!-- PPT 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Presentation 5: Bays Theorem Basics</h5>
+              <p class="card-text">An introduction to Bays Theorem.</p>
+              <a href="https://docs.google.com/presentation/d/1F_ngqh0w-RuUF8N7r4NsssfJV61WFfY2/edit?usp=sharing&ouid=100803586706240220755&rtpof=true&sd=true" target="_blank" class="btn btn-primary">View PPT</a>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Presentation 6: Collinearity</h5>
+                <p class="card-text">Understanding Collinearity</p>
+                <a href="https://docs.google.com/presentation/d/1wJuwQ_OoqnBZvRTSB7lEaKcI5bYCnv85/edit?usp=sharing&ouid=100803586706240220755&rtpof=true&sd=true" target="_blank" class="btn btn-primary">View PPT</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Presentation-7</h5>
+                <p class="card-text">Solution Of Internal - 1 Test</p>
+                <a href="https://docs.google.com/presentation/d/1r98noDycmV2HjK4DlUKUdq65fa3wrT9G/edit?usp=sharing&ouid=100803586706240220755&rtpof=true&sd=true" target="_blank" class="btn btn-primary">View PPT</a>
+              </div>
+            </div>
+            
+      </div>
+    </div>
+  </section>
+
+  <!-- Submission Section -->
+  <section id="submission" class="p-5">
+    <h1 class="container text-center" >My YouTube Videos</h1>
+
+    <div class="containervideo">
+        <!-- Video 1 -->
+        <div class="video-card">
+            <h3>Data Preparation : Unit 2</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-FUuhfoa9ZI?si=R2oXC1O-g8kFuJD_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+            <h3>Basics of python : Unit 1</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Lm3uXCpFXeo?si=kPTbPexiVDJlPk1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+            <h3>Introduction of Graphs: Unit 3</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HHvZTWjAbVs?si=xIPdyVAzH6t8Lujt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-card">
+          <h3>Introduction of Graphs: Unit 3 part II </h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Pr0StgxKlFQ?si=CSoTm58SKYULVbcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>Regression : unit 9</h3>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6ykq5TXVGt0?si=WyzvsKNsrC9wiL6m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+          <h3>Logistic Regression : Unit 11</h3>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZQrhu5cT1bo?si=qztWoOAEcmShp2i7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+          <h3>Decision Tree : Unit 4</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DWoPo0F9CGc?si=NsYd0yQFcR4NX2_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+          <h3>Decision Tree : Unit 4 Part II</h3>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BMfVgOyrhNI?si=OEvjRgqAZH04-lwD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+        <div class="video-card">
+            <h3>Association Rule: Unit 12</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kBhPYfsNFSY?si=_LaCBv0qeHgTfEYe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="video-card">
+            <h3>K- Means Unit 8</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wE3LN_jsOlw?si=2vFX8YF5t80IWy6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="video-card">
+            <h3>Model Evaluation : Unit 5</h3>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fEs38pSzcW0?si=hlhhMWPqGfDTVle9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="video-card">
+            <h3>Multicollinearity : Unit 10</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/G-A02xyyZDY?si=vJNEF0mXrLOfWaQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="video-card">
+            <h3>Neural Network Application :unit 7</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/66g-8uxPSP0?si=_A_xKei9SELccHXf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+      
+          <div class="video-card">
+            <h3>Internal -2</h3>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D5nU6HhoE-I?si=At7EKAiaU5bjI09s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="video-card">
+            <h3>Internal -1</h3>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RrW0QrEqC1A?si=VHvi03Gud1BkkJst" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        <!-- Add as many videos as needed -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-3">
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
